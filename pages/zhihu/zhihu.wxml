@@ -1,0 +1,29 @@
+<scroll-view class="container" scroll-y="true" bindscrolltolower="loadMore">
+    <swiper class="focus" indicator-dots="true" indicator-color="rgba(255, 255, 255, .5)" indicator-active-color="#fff" autoplay="true" interval="3000" circular="true">
+        <block wx:for="{{sliders}}" wx:key="{{item.id}}">
+            <swiper-item class="focus-item">
+                <navigator url="/pages/zhihu/detail?id={{item.id}}">
+                    <image src="{{item.image}}" />
+                    <view class="text-area">
+                        <text>{{item.title}}</text>
+                    </view>
+                </navigator>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view class="news-area">
+        <view class="news-list" wx:for="{{list}}" wx:key="{{index}}">
+            <text class="sub-title">{{item.header}}</text>
+            <block wx:for="{{item.stories}}" wx:key="{{item.id}}">
+                <navigator class="news-item" url="/pages/zhihu/detail?id={{item.id}}">
+                    <view class="item-title">
+                        <text>{{item.title}}</text>
+                    </view>
+                    <view class="item-img">
+                        <image src="{{item.images[0]}}" />
+                    </view>
+                </navigator>
+            </block>                
+        </view>
+    </view>
+</scroll-view>

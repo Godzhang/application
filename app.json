@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/zhihu/zhihu",
+    "pages/zhihu/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "application",
+    "navigationBarTextStyle":"#fff"
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "navigationBarBackgroundColor": "#008bed",
+    "navigationBarTitleText": "知乎日报",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh": true
+}

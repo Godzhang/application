@@ -1,0 +1,19 @@
+<view class="container">
+    <view class="art-header">
+        <image src="{{art.image}}" class="art-img" />
+        <view class="art-title">{{art.title}}</view>
+        <view class="art-source">{{art.image_source}}</view>
+    </view>
+    <view class="art-content">
+        <view class="art-subtitle">{{art.body.subtitle}}</view>
+        <view class="avatar-info">
+            <image src="{{art.body.avatarImg}}" />
+            <text class="avatar-name">{{art.body.avatarName}}<text class="avatar-job">{{art.body.avatarJob}}</text>
+            </text>
+        </view>
+        <view class="art-item" wx:for="{{art.body.allContent}}" wx:key="{{index}}">
+            {{item}}
+        </view>
+        <view class="more-button">查看知乎讨论</view>
+    </view>
+</view>

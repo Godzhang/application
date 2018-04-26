@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="list">
+        <navigator url="/pages/zhihu/zhihu" class="item">
+            <text>知乎日报</text>
+            <view class="zhihu-icon">
+                <image src="../../images/zhihu/arrow.png" mode="aspectFill" />
+            </view>
+        </navigator>
+    </view>
+</view>
