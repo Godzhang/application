@@ -1,0 +1,6 @@
+{
+    "navigationBarBackgroundColor": "#c20c0c",
+    "navigationBarTitleText": "音乐搜索",
+    "navigationBarTextStyle":"#fff",
+    "enablePullDownRefresh": true
+}

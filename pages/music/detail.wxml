@@ -1,0 +1,10 @@
+<view class="container">
+    <view class="ablum-cover">
+        <image src="{{musicCover}}" mode="widthFix" />
+    </view>
+    <view class="btn-area">
+        <button class="play-btn" bindtap="play" hidden="{{playing}}"></button>
+        <button class="pause-btn" bindtap="pause" hidden="{{!playing}}"></button>
+        <button class="stop-btn" bindtap="stop"></button>
+    </view>
+</view>

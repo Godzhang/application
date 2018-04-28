@@ -1,0 +1,129 @@
+.search-area{
+    padding: 30rpx 20rpx;
+    border-bottom: 2rpx solid rgba(0, 0, 0, .1);
+}
+.search-box{
+    position: relative;
+    height: 60rpx;
+    background: #ebecec;
+    padding: 0 60rpx;
+    border-radius: 60rpx;
+}
+.search-box input{
+    display: inline-block;
+    width: 100%;
+    height: 60rpx;
+    font-size: 28rpx;
+    color: #333;
+}
+.search-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60rpx;
+    height: 60rpx;
+}
+.search-icon view{
+    width: 30rpx;
+    height: 30rpx;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNiAyNiI+PHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBmaWxsPSIjYzljOWNhIiBkPSJNMjUuMTgxLDIzLjUzNWwtMS40MTQsMS40MTRsLTcuMzE1LTcuMzE0CgkJQzE0LjcwOSwxOS4xMDcsMTIuNDYsMjAsMTAsMjBDNC40NzcsMjAsMCwxNS41MjMsMCwxMEMwLDQuNDc3LDQuNDc3LDAsMTAsMGM1LjUyMywwLDEwLDQuNDc3LDEwLDEwYzAsMi4zNDItMC44MTEsNC40OS0yLjE2LDYuMTk1CgkJTDI1LjE4MSwyMy41MzV6IE0xMCwyYy00LjQxOCwwLTgsMy41ODItOCw4czMuNTgyLDgsOCw4YzQuNDE4LDAsOC0zLjU4Miw4LThTMTQuNDE4LDIsMTAsMnoiLz48L3N2Zz4=);
+}
+.close-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60rpx;
+    height: 60rpx;
+}
+.close-icon view{
+    width: 28rpx;
+    height: 28rpx;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyOCAyOCI+PGcgZmlsbC1ydWxlPSJldmVub2RkIj48cGF0aCBmaWxsPSIjYmNiZGJkIiBkPSJNMTQsMGM3LjczMiwwLDE0LDYuMjY4LDE0LDE0YzAsNy43MzItNi4yNjgsMTQtMTQsMTQKCVMwLDIxLjczMiwwLDE0QzAsNi4yNjgsNi4yNjgsMCwxNCwweiIvPjxnIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2ViZWNlYiIgc3Ryb2tlLXdpZHRoPSIyLjUiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCI+PHBhdGggZD0ibTE5IDlsLTEwIDEwIi8+PHBhdGggZD0ibTkgOWwxMCAxMCIvPjwvZz48L2c+PC9zdmc+);
+}
+.search-help{
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 20rpx;
+    color: #507daf;
+    font-size: 30rpx;
+    border-bottom: 2rpx solid rgba(0, 0, 0, .1);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.song-item{
+    padding-left: 20rpx;
+    border-bottom: 2rpx solid rgba(0, 0, 0, .1);
+}
+.song-item-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.song-left{
+    max-width: 700rpx;
+    padding: 12rpx 0;
+    overflow: hidden;
+}
+.song-name{
+    font-size: 32rpx;
+    height: 50rpx;
+    line-height: 50rpx;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.song-info{
+    height: 36rpx;
+    line-height: 36rpx;
+    font-size: 24rpx;
+    color: #888;
+    overflow: hidden;
+}
+.songer{
+    color: #507daf;
+}
+.play-btn{
+    display: flex;
+    align-items: center;
+    padding: 0 20rpx;
+}
+.play-btn text{
+    display: block;
+    width: 44rpx;
+    height: 44rpx;
+    background: url(//s3.music.126.net/m/s/img/index_icon_2x.png?5207a28c3767992ca4bb6d4887c74880) no-repeat;
+    background-size: 332rpx 194rpx;
+    background-position: -48rpx 0;
+}
+
+.search-tip{
+    position: relative;
+    display: flex;
+    height: 80rpx;
+    line-height: 80rpx;
+    padding: 0 20rpx 0 80rpx;
+    font-size: 30rpx;
+    border-bottom: 2rpx solid rgba(0, 0, 0, .1);
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.search-tip .search-icon{
+    top: 22.5rpx;
+    left: 20rpx;
+    width: 35rpx;
+    height: 35rpx;
+}
+.search-tip .search-icon view{
+    width: 35rpx;
+    height: 35rpx;
+}

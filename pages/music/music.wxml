@@ -1,0 +1,56 @@
+<scroll-view 
+scroll-y="true" 
+class="container" 
+bindscrolltolower="loadMore">
+    <view class="search-area">
+        <view class="search-box">
+            <input 
+            type="text" 
+            value="{{value}}"  
+            placeholder="搜索歌曲、歌手、专辑" 
+            placeholder-style="color: #c9c9c9" 
+            focus="true" 
+            confirm-type="search" 
+            bindconfirm="startSearch" 
+            bindinput="changeSearchWord" />
+            <view class="search-icon">
+                <view></view>
+            </view>
+            <view class="close-icon" hidden="{{!value.length}}" bindtap="clearInput">
+                <view></view>
+            </view>
+        </view>
+    </view>
+    <view class="search-help" hidden="{{!value.length || showTip}}" bindtap="startSearch">
+        <text>搜索 "{{value}}"</text>
+    </view>
+    <view class="search-note" hidden="{{!noteList.length || showNote}}">        
+        <block wx:for="{{noteList}}" wx:key="{{item.id}}">
+            <view class="search-tip" bindtap="searchNote" data-name="{{item.name}}">
+                <view class="search-icon">
+                    <view></view>
+                </view>
+                <text>{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="songs-list" hidden="{{!songs.length || showList}}">
+        <block wx:for="{{songs}}" wx:key="{{item.id}}">
+            <navigator class="song-item" url="/pages/music/detail?id={{item.id}}">
+                <view class="song-item-box">
+                    <view class="song-left">
+                        <view class="song-name">
+                            {{item.name}}
+                        </view>
+                        <view class="song-info">
+                            <text class="songer">{{item.artists[0].name}}</text> - <text class="song-ablum">{{item.album.name}}</text>
+                        </view>
+                    </view>
+                    <view class="play-btn">
+                        <text></text>
+                    </view>
+                </view>
+            </navigator>
+        </block>
+    </view>
+</scroll-view>

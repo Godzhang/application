@@ -24,7 +24,6 @@ Page({
                 self.setData({
                     art: res.data
                 });
-                // console.log(self.data.art)
             }
         });
     }

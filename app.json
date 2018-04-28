@@ -1,6 +1,8 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/music/music",
+    "pages/music/detail",
     "pages/zhihu/zhihu",
     "pages/zhihu/detail"
   ],

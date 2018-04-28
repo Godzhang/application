@@ -1,10 +1,27 @@
 function htmltoObject(html){
     // console.log(html);
-    let subtitle = html.match(/<h2 class="question-title">(.*?)<\/h2>/)[1];
-    let avatarImg = html.match(/<img class="avatar" src="([^"]*?)">/)[1];
-    let avatarName = html.match(/<span class="author">(.*?)<\/span>/)[1];
-    let avatarJob = html.match(/<span class="bio">(.*?)<\/span>/)[1];
+    let titleReg = /<h2 class="question-title">(.*?)<\/h2>/,
+        avatarImgReg = /<img class="avatar" src="([^"]*?)">/,
+        avatarNameReg = /<span class="author">(.*?)<\/span>/,
+        avatarObjReg = /<span class="bio">(.*?)<\/span>/,
+        subtitle = '',
+        avatarImg = '',
+        avatarName = '',
+        avatarJob = '';
     
+    if(titleReg.test(html)){
+      subtitle = html.match(titleReg)[1];
+    }
+    if(avatarImgReg.test(html)){
+      avatarImg = html.match(avatarImgReg)[1];
+    }
+    if(avatarNameReg.test(html)){
+      avatarName = html.match(avatarNameReg)[1];
+    }
+    if(avatarObjReg.test(html)){
+      avatarJob = html.match(avatarObjReg)[1];
+    }
+
     let allContent = html.match(/<p>(.*?)<\/p>/g);
     allContent = allContent.map(val => {
         return val.replace(/<p>/g, '')

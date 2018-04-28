@@ -2,8 +2,14 @@
     <view class="list">
         <navigator url="/pages/zhihu/zhihu" class="item">
             <text>知乎日报</text>
-            <view class="zhihu-icon">
-                <image src="../../images/zhihu/arrow.png" mode="aspectFill" />
+            <view class="arrow-icon">
+                <image src="../../images/arrow.png" mode="aspectFill" />
+            </view>
+        </navigator>
+        <navigator url="/pages/music/music" class="item">
+            <text>音乐搜索</text>
+            <view class="arrow-icon">
+                <image src="../../images/arrow.png" mode="aspectFill" />
             </view>
         </navigator>
     </view>
